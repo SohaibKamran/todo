@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+const DATA = [
+  { id: "todo-0", name: "Create frontend app in React", completed: true },
+  { id: "todo-1", name: "Create Server in Nodejs using Express framework", completed: true },
+  { id: "todo-2", name: "Attach MongoDB to Express Server", completed: true }
+]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={DATA}/>
   </React.StrictMode>
 );
 
